@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1,shrink-to-fit=no">
+        <meta name="theme-color" content="#000000"><link rel="manifest" href="manifest.json">
+        <link rel="shortcut icon" href="favicon.ico">
+        <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.12/semantic.min.css">
+        <script src="https://api.gazerecorder.com/GazeCloudAPI.js" ></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+        <script src="p.js" charset="utf-8"></script>
+        <script src= "eyetracker - tictactoe.js" ></script>
+        <link href="tictactoe.css" rel="stylesheet">
+        <title>React TicTacToe AlphaGo App</title>
+    </head>
+
+    <body>
+
+        <header class = 'header'>
+
+            <div class = 'header-div'>
+
+                    <div class = 'logobox'>
+                        <a href = "/">
+                            <img class = 'logo' src="images/icon.png" alt="brain image">
+                        </a>
+                    </div>
+
+                    <div class = 'hrefbox'>
+                        <a href = "/logout" class = 'logoutlnk'>Log Out</a>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </header>
+
+        <div id="root"></div>
+
+        <script>
+
+            window.addEventListener("mousedown",function(e) {
+                document.body.classList.add("mouse-navigation"),
+                document.body.classList.remove("kbd-navigation")
+            }),
+
+            window.addEventListener("keydown",function(e) {
+                9===e.keyCode&&(document.body.classList.add("kbd-navigation"),
+                document.body.classList.remove("mouse-navigation"))
+            }),
+
+            window.addEventListener("click",function(e) {
+                "A"===e.target.tagName&&"#"===e.target.getAttribute("href")&&e.preventDefault()
+            }),
+
+            console.error=function(e) {
+                return function(){
+                    errors.textContent+=Array.prototype.slice.call(arguments).join(" ")+"\n",
+                    errors.style.display="",
+                    e.apply(this,arguments)
+                }
+            } (console.error)
+
+        </script>
+
+        <script type="text/javascript" src="tictactoe.js"></script>
+
+        <div>
+            <div class = white>
+                <div class = buttoninformation>
+                    <div class = buttoninformation2>
+                        <div class = buttoninformation3>
+                        <button class = 'moves newgame'id  type="button" onclick="GazeCloudAPI.StartEyeTracking();">Eyetracking Start</button>
+                        <button class = 'moves newgame'id  type="button" onclick="GazeCloudAPI.StopEyeTracking();"> Eyetracking Stop</button>
+                        </div>
+                    </div>
+                </div>
+                <div class = buttoninformation>
+                    <div class = buttoninformation2>
+                        <div class = buttoninformation3>
+                            <p class = 'information'id = 'Winner'> Complete a row, a column, or a diagonal, drawn in the spaces on the grid of squares by clicking them!</p>
+                            <p> </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </body>
+
+</html>

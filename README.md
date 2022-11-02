@@ -55,7 +55,7 @@ Step 3 setting up emailing syetem through Google OAuth2 (2 options):
   -  Replace the lines 34 and 252 on app.js with the email address of the mail used in the setup
 
 Step 4 Starting the app in command line:
-  - Navigate to the correct directory, for me this is "cd C:\Work\GitHub\OBTG"
+  - Navigate to the correct directory, for me this is "cd C:\Work\GitHub\3rd-Year-OBTG"
   - Type "heroku open" to open the website!
 
   - NOTE: If files fail to load try putting the content of the connect4, tictactoe and pong folders inside the main project folder, this might be caused by some indexing errors

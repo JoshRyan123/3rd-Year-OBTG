@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="theme-color" content="#000000">
+    <link rel="manifest" href="manifest.json">
+    <link rel="shortcut icon" href="favicon.ico">
+
+    <script src="https://api.gazerecorder.com/GazeCloudAPI.js" ></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script src="p.js" charset="utf-8"></script>
+    <script src= "eyetracker - connect4.js" ></script>
+
+    <link type="text/css" rel="stylesheet" charset="UTF-8" href="https://translate.googleapis.com/translate_static/css/translateelement.css">
+    <!-- <link rel="stylesheet" href="connect4-index.css"></link> -->
+    <link rel="stylesheet" href="connect4.css"></link>
+    <title>Connect4</title>
+  </head>
+  <body>
+    <header class = 'header'>
+
+      <div class = 'header-div'>
+
+          <div class = 'logobox'>
+              <a href = "/">
+                  <img class = 'logo' src="images/icon.png" alt="logo image">
+              </a>
+          </div>
+
+          <div class = 'hrefbox'>
+              <a href = "/logout" class = 'logoutlnk'>Log Out</a>
+          </div>
+
+      </div>
+
+  </header>
+
+    <h1>Synaptic and Convolutional Connect4 Game</h1>
+
+    <div id="root"></div>
+    <script type="text/javascript" src="connect4.js"></script>
+
+    <div>
+      <div class = white>
+        <div class = buttoninformation>
+            <div class = buttoninformation2>
+                <div class = buttoninformation3>
+                <button class = 'moves newgame'id  type="button" onclick="GazeCloudAPI.StartEyeTracking();">Eyetracking Start</button>
+                <button class = 'moves newgame'id  type="button" onclick="GazeCloudAPI.StopEyeTracking();"> Eyetracking Stop</button>
+                </div>
+            </div>
+        </div>
+        <div class = buttoninformation>
+            <div class = buttoninformation2>
+                <div class = buttoninformation3>
+                    <p class = 'information'id = 'Winner'> Try and connect four pieces of your color together in order to beat the opponent! Click on any column to start :), please situate the game so that the whole board is visibe along with the game title.</p>
+                    <p> </p>
+                </div>
+            </div>
+        </div>
+      </div>
+  </div>
+
+  </body>
+  
+</html>

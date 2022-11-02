@@ -1,0 +1,22 @@
+{
+  "short_name": "React App",
+  "name": "Tic-Tac-Toe",
+  
+  "tictactoe.css": "tictactoe.css",
+  "tictactoe.css.map": "tictactoe.css.map",
+  "tictactoe.js": "tictactoe.js",
+  "tictactoe.js.map": "tictactoe.js.map",
+  
+  "icons": [
+    {
+      "src": "favicon.ico",
+      "sizes": "64x64 32x32 24x24 16x16",
+      "type": "image/x-icon"
+    }
+  ],
+  
+  "start_url": "./tictactoe.html",
+  "display": "standalone",
+  "theme_color": "#000000",
+  "background_color": "#ffffff"
+}

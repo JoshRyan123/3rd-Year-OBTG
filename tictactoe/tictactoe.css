@@ -1,0 +1,453 @@
+h1 {
+    padding-top: 110px;
+    padding-bottom: 60px;
+    padding-left: 50px;
+    font-weight: bold;
+    font-size: 50px;
+}
+
+ol,ul{
+    padding-left:30px
+}
+
+.board-row:after{
+    clear:both;
+    content:"";
+    display:table
+}
+
+.white {
+    background-color: rgb(238, 238, 238);
+
+    height: 150px;
+    padding-top: -1px;
+}
+
+.status{
+    margin-bottom:10px
+}
+
+.square {
+    background: #fff;
+    border: 2px solid rgb(0, 0, 0);
+
+    font-size: 75px;
+    
+    font-weight: 700;
+    line-height: 34px;
+    height: 54px;
+    
+    margin-right: -55px;
+    margin-top: 50px;
+    margin-left: 60px;
+    margin-bottom: -45px;
+
+    padding-right: 75px;
+    padding-bottom: 60px;
+    padding-left: 15px;
+    padding-top: 30px;
+
+    text-align: center;
+    width: 54px;
+
+
+    background-color: rgb(238, 238, 238);
+    flex-wrap: wrap;
+    vertical-align: bottom;
+}
+
+.kbd-navigation, .square:focus{
+    background:rgb(233, 25, 25);
+    outline: none;
+}
+
+.game{
+    -ms-flex-direction:row;
+    flex-direction:row
+}
+
+.game-board {
+    margin-left: 550px;
+    margin-top: -300px;
+}
+
+.game,
+.game-info{
+    display:-ms-flexbox;
+    display:flex
+}
+
+.game-info{
+    margin-left:20px
+}
+
+.game-status{
+    display:-ms-flexbox;
+    display:flex;
+    -ms-flex-pack:center;
+    justify-content:center;
+    -ms-flex-align:center;
+    align-items:center;
+    margin-bottom: 100px;
+    margin-top: -400px;
+    margin-left: 450px;
+}
+.game-status:hover{
+    margin-left: -50px;
+}
+
+button{
+    margin:0px;
+    size:16px;
+}
+
+ol{
+    list-style:none
+}
+
+.buttoninformation{
+    background-color: transparent;
+    border: 2px transparent solid;
+    border-radius: 55px;
+    margin-top: 11vh;
+    margin-left: 40%;
+    margin-bottom: -100px;
+}
+
+.buttoninformation2{
+   display: flex !important;
+
+}
+
+.buttoninformation3{
+    display: flex !important;
+    flex-wrap: wrap;
+    flex: 0 0 50%;   
+
+}
+
+
+.information{
+    font-family: sans-serif;
+    font-size: calc(0.75em + 0.5vw);
+    padding-top: 0px;
+    max-width: 90%;
+    margin-left: -75px;
+    color: #000000;
+    text-align: center;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.ui, .checked, .fitted, .checkbox{
+    margin-left: 0px;
+}
+/* body css */
+body {
+    height: 107vh;    
+    background: linear-gradient(180deg, #000000 0, #000000 25%, #003087 75%);
+
+    color: #ffffff;
+}
+
+/* affects the style of an element's scrollbar when overflow:scroll is set; */
+body::-webkit-scrollbar {
+    /* cursor: pointer; */
+    width: 20px;
+    height: 10px;
+    visibility: visible;
+}
+
+/* draggable scrolling handle */
+body::-webkit-scrollbar-thumb {
+    height: 0px;
+    border-radius: 55px;
+    visibility: visible;
+    transition: all 0.5s ease;
+    background-color: #00153d;
+}
+
+/* progress bar */
+body::-webkit-scrollbar-track {
+    z-index: 4;
+    background: var(--scrollbarBG);
+}
+
+/* progress bar hover */
+/* body::-webkit-scrollbar-thumb:hover{
+    transition: all 0.5s ease;
+    visibility: visible;
+} */
+
+
+/* header css */
+.header {
+    opacity: 100%;
+    height: 125px;
+    margin-left: -20px;
+    margin-top: 10px;
+    
+    background: transparent;
+    transition: all 0.5s ease;
+    width: 100vw !important;
+    position: fixed !important;
+    top: 0px !important;
+    z-index: 1 !important;
+
+    /* display: block; */
+}
+
+/* header edited */
+.header-alt {
+    opacity: 0%;
+    height: 125px;
+    margin-left: -20px;
+
+    transition:all 0.5s ease;
+    width: 100vw !important;
+    position: fixed !important;
+    top: 0px !important;
+    z-index: 1 !important;
+}
+
+/* header container */
+.header-div {
+    padding: 0 30px !important;
+    /* align-content: center !important; */
+    /* position: relative !important; */
+    /* background-color: transparent !important; */
+    height: 68px !important;
+    display: flex !important;
+}
+
+/* logo container */
+.logobox {
+    display: flex !important;
+    align-items: center !important;
+    align-content: center !important;
+    flex: 0 0 50%;
+    max-width: 25%;
+    margin-top: 25px;
+}
+
+/* logo styling */
+.logo {
+    margin-top: 30px;
+    height: 120px !important;
+    display: block !important;
+    /* cursor: not-allowed; */
+    border: 2px solid rgb(255, 255, 255) !important;
+}
+
+
+/* link container */
+.hrefbox {
+    margin-top: 25px;
+    display: flex !important;
+    align-items: center !important;
+    flex-direction: row !important;
+    flex: 0 0 75%;
+    max-width: 75%;
+    justify-content: flex-end !important;
+}
+
+/* logout link styling  */
+.logoutlnk {
+    margin-top: 30px;
+    margin-left: 5px;
+    font-family: sans-serif;
+    font-size: 18px;
+
+    background-color: white;
+    color: #005EB8;
+    transition: all 0.5s ease;
+    border-width: 0 0 2px 0 !important;
+    cursor: pointer !important;
+    padding: 14px 30px 12px 30px !important;
+    padding: 7px 15px 6px 15px !important;
+    border-radius: 55px !important;
+    text-decoration: none !important;
+    text-transform: uppercase !important;
+    text-shadow: none !important;
+
+    border: 2px solid rgb(0, 0, 0) !important;
+    background-color: white;
+    color: #000000;
+}
+
+/* logout link styling when scrolled */
+.logoutlnk-alt {
+    margin-top: 30px;
+    margin-left: 5px;
+    font-family: sans-serif;
+    font-size: 18px;
+
+    transition: all 0.5s ease;
+    border-width: 0 0 2px 0 !important;
+    cursor: pointer !important;
+
+    padding: 7px 15px 6px 15px !important;
+    border-radius: 55px !important;
+    text-decoration: none !important;
+    text-transform: uppercase !important;
+    text-shadow: none !important;
+
+    background-color: #005EB8;
+    color: white;
+    border: 2px solid rgb(255, 255, 255) !important;
+}
+
+/* logout button hover for scrolled/unscrolled */
+.logoutlnk:hover {
+    background-color:  #003087;
+    color: white;
+    padding: 14px 30px 12px 30px !important;
+
+}
+.logoutlnk-alt:hover {
+    background-color:  #003087;
+    color: white;
+    padding: 14px 30px 12px 30px !important;
+
+}
+
+
+p {
+    font-family: sans-serif;
+    text-align: center;
+    font-size: 19px;
+}
+/* Game title styling */
+p u{
+    text-align: right;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: calc(1em + 1vh);
+}
+/* Play game button */
+p a{
+    font-family: sans-serif;
+    font-size: 18px;
+
+    background-color: #005EB8;
+    color: white;
+    transition: all 0.5s ease;
+    border-width: 0 0 2px 0 !important;
+    cursor: pointer !important;
+
+    padding: 7px 15px 6px 15px !important;
+    border-radius: 55px !important;
+    text-decoration: none !important;
+    text-transform: uppercase !important;
+    text-shadow: none !important;
+}
+/* Play game hover */
+p a:hover {
+    background-color:  #003087;
+    color: white;
+    padding: 14px 30px 12px 30px !important;
+}
+
+.main-container{
+    /* background-color: transparent; */
+    color: #ffffff;
+    position: absolute;
+    top: 20vh;
+    left: 12%;
+    height: 500px;
+    width: 70vw;
+    border: 2px solid transparent;
+}
+
+.secondary-container{
+    margin-top: 10px;
+    margin-bottom: 460px;
+    /* padding: 0 30px !important; */
+    height: 246px !important;
+    position: relative !important;
+    background-color: transparent !important;
+    /* display: flex !important; */
+}
+
+.game-information{
+    display: flex !important;
+    align-items: left !important;
+    align-content: left !important;
+    justify-items: flex-start !important;
+    justify-content: flex-start !important;
+    flex: 0 0 75%;
+    max-width: 100%;
+    background-color: #000000;
+    border: 4px solid #ffffff;
+    background: linear-gradient(180deg, #000000 50%, #000000 5%, #001b4c 95%);
+    /* border-top-left-radius: 55px;
+    border-top-right-radius: 55px; */
+}
+
+ .newgame {
+    margin-right: 10px;
+    margin-top: 25px;
+    font-family: sans-serif;
+    font-size: calc(0.75em + 0.1vw);
+    cursor: pointer !important;
+    padding: 7px 15px 6px 15px !important;
+    border-radius: 55px !important;
+    text-shadow: none !important;
+    margin-bottom: 30px;
+}
+
+
+#canvas {
+user-select: none;
+}
+
+.ui.button {
+    cursor: pointer;
+    display: inline-block;
+    min-height: 1em;
+    outline: 0;
+    border: none;
+    vertical-align: baseline;
+    background: #ffffff none;
+    color: rgba(0,0,0,.6);
+    font-family: Lato,'Helvetica Neue',Arial,Helvetica,sans-serif;
+    margin: 0 0.25em 0 0;
+    margin-left: -10px;
+    padding: 0.78571429em 1.5em 0.78571429em;
+    text-transform: none;
+    margin-top: 20px;
+    text-shadow: none;
+    font-weight: 700;
+    line-height: 1em;
+    font-style: normal;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 0.28571429rem;
+    box-shadow: 0 0 0 1px transparent inset, 0 0 0 0 rgb(34 36 38 / 15%) inset;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -webkit-transition: opacity .1s ease,background-color .1s ease,color .1s ease,box-shadow .1s ease,background .1s ease;
+    transition: opacity .1s ease,background-color .1s ease,color .1s ease,box-shadow .1s ease,background .1s ease;
+    will-change: '';
+    -webkit-tap-highlight-color: transparent;
+    padding: 10px;
+}
+
+.ui.button:hover {
+    cursor: pointer;
+    display: inline-block;
+    min-height: 1em;
+    outline: 0;
+    border: black;
+    vertical-align: baseline;
+    background: #ff0000 none;
+    color: rgba(0,0,0,.6);
+    font-family: Lato,'Helvetica Neue',Arial,Helvetica,sans-serif;
+    margin-top: 18px;
+    margin-left: -32px;
+    padding: 0.78571429em 1.5em 0.78571429em;
+    -webkit-tap-highlight-color: transparent;
+}

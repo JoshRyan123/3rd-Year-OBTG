@@ -1,0 +1,362 @@
+html {
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+
+/* body css */
+body {
+    height: 229vh;    
+    background: linear-gradient(180deg, #000000 0, #000000 25%, #003087 75%);    
+    /* Might need to change % and height based upon what we're including on this page */
+}
+
+/* affects the style of an element's scrollbar when overflow:scroll is set; */
+body::-webkit-scrollbar {
+    width: 20px;
+    height: 10px;
+    visibility: visible;
+}
+
+/* draggable scrolling handle */
+body::-webkit-scrollbar-thumb {
+    height: 0px;
+    border-radius: 55px;
+    visibility: visible;
+    transition: all 0.5s ease;
+    background-color: #00153d;
+}
+
+/* progress bar */
+body::-webkit-scrollbar-track {
+    z-index: 4;
+    background: var(--scrollbarBG);
+}
+
+/* progress bar hover */
+/* body::-webkit-scrollbar-thumb:hover{
+    transition: all 0.5s ease;
+    visibility: visible;
+} */
+
+
+/* header css */
+.header {
+    opacity: 100%;
+    height: 125px;
+    margin-left: -20px;
+
+    background: white;
+    transition: all 0.5s ease;
+    width: 100vw !important;
+    position: fixed !important;
+    top: 0px !important;
+    z-index: 1 !important;
+
+    border: 2px solid #003087 !important;
+}
+
+/* header edited */
+.header-alt {
+    opacity: 85%;
+    height: 125px;
+    margin-left: -20px;
+
+    background: #003087;
+    transition:all 0.5s ease;
+    width: 100vw !important;
+    position: fixed !important;
+    top: 0px !important;
+    z-index: 1 !important;
+
+    border: 2px solid rgb(0, 0, 0) !important;
+}
+
+/* header container */
+.header-div {
+    padding: 0 30px !important;
+    height: 68px !important;
+    display: flex !important;
+}
+
+/* logo container */
+.logobox {
+    display: flex !important;
+    align-items: center !important;
+    align-content: center !important;
+    flex: 0 0 50%;
+    max-width: 25%;
+    margin-top: 25px;
+}
+
+/* logo styling */
+.logo {
+    margin-top: 30px;
+    height: 120px !important;
+    display: block !important;
+}
+
+
+/* link container */
+.hrefbox {
+    margin-top: 25px;
+    display: flex !important;
+    align-items: center !important;
+    flex-direction: row !important;
+    flex: 0 0 75%;
+    max-width: 75%;
+    justify-content: flex-end !important;
+}
+
+/* logout link styling  */
+.logoutlnk {
+    margin-top: 30px;
+    margin-left: 5px;
+    font-family: sans-serif;
+    font-size: 18px;
+
+    transition: all 0.5s ease;
+    border-width: 0 0 2px 0 !important;
+    padding: 7px 15px 6px 15px !important;
+    border-radius: 55px !important;
+    text-decoration: none !important;
+    text-transform: uppercase !important;
+    text-shadow: none !important;
+
+    border: 2px solid rgb(0, 0, 0) !important;
+    background-color: white;
+    color: #000000;
+}
+
+/* logout link styling when scrolled */
+.logoutlnk-alt {
+    margin-top: 30px;
+    margin-left: 5px;
+    font-family: sans-serif;
+    font-size: 18px;
+
+    transition: all 0.5s ease;
+    border-width: 0 0 2px 0 !important;
+    cursor: pointer !important;
+    padding: 14px 30px 12px 30px !important;
+    padding: 7px 15px 6px 15px !important;
+    border-radius: 55px !important;
+    text-decoration: none !important;
+    text-transform: uppercase !important;
+    text-shadow: none !important;
+
+    background-color: #005EB8;
+    color: white;
+    border: 2px solid rgb(255, 255, 255) !important;
+}
+
+/* logout button hover for scrolled/unscrolled */
+.logoutlnk:hover {
+    background-color:  #003087;
+    color: white;
+    padding: 14px 30px 12px 30px !important;
+
+}
+.logoutlnk-alt:hover {
+    background-color:  #003087;
+    color: white;
+    padding: 14px 30px 12px 30px !important;
+
+}
+
+/* Game title styling */
+p u{
+    text-align: right;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: calc(1em + 1vh);
+}
+/* Play game button */
+p a{
+    font-family: sans-serif;
+    font-size: 18px;
+
+    background-color: #005EB8;
+    color: white;
+    transition: all 0.5s ease;
+    border-width: 0 0 2px 0 !important;
+    cursor: pointer !important;
+
+    padding: 7px 15px 6px 15px !important;
+    border-radius: 55px !important;
+    text-decoration: none !important;
+    text-transform: uppercase !important;
+    text-shadow: none !important;
+}
+/* Play game hover */
+p a:hover {
+    background-color:  #003087;
+    color: white;
+    padding: 14px 30px 12px 30px !important;
+}
+
+.main-container{
+    color: #ffffff;
+    position: absolute;
+    top: 20vh;
+    left: 12%;
+    height: 500px;
+    width: 70vw;
+    border: 2px solid transparent;
+}
+
+.secondary-container{
+    margin-top: 10px;
+    margin-bottom: 460px;
+    height: 246px !important;
+    position: relative !important;
+    background-color: transparent !important;
+}
+
+.game-information{
+    display: flex !important;
+    justify-items: flex-start !important;
+    justify-content: flex-start !important;
+    flex: 0 0 75%;
+    max-width: 100%;
+    border: 4px solid #ffffff;
+    background: linear-gradient(180deg, #000000 50%, #000000 5%, #001b4c 95%);
+}
+
+.p-style{
+    margin-left: 15px;
+    margin-right: 15px;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: calc(1em + 0.5vh);
+}
+
+.gameimage {
+    cursor: pointer;
+    transition: .3s;
+    display: flex !important;
+    align-items: center !important;
+    align-content: center !important;
+    justify-items: flex-start !important;
+    justify-content: flex-start !important;
+    flex: 0 0 33%;
+    max-width: 100%;
+    height: 246px !important;
+    margin-top: -4px;
+    padding: 0px;
+    background: linear-gradient(180deg, #001b4c 50%, #001b4c 5%, #003087 95%);
+    border: 4px solid #ffffff;
+    border-bottom-left-radius: 55px;
+    border-bottom-right-radius: 55px;
+    margin-bottom: 60px;
+}
+
+.gameimage:hover {
+    padding: 10px;
+    transition: .3s;
+    background: #ffffff;
+    border: 4px solid #003087;
+    border-radius: 55px;
+    margin-bottom: 60px;
+}
+
+.tictactoe-icon{
+    transition: .3s;
+    width: 200px;
+    height: auto;
+    margin-left: 430px;
+    max-width: 22vw;
+    flex: 0 0 50%;
+    background: transparent;
+    size: 50%;
+}
+.tictactoe-icon:hover{
+    margin-left: 355px;
+    width: 330px;
+}
+
+.pong-icon{
+    transition: .3s;
+    width: 150px;
+    height: auto;
+    margin-left: 450px;
+    max-width: 22vw;
+    flex: 0 0 50%;
+    background: transparent;
+    size: 50%;
+}
+.pong-icon:hover{
+    margin-left: 420px;
+    width: 210px;
+}
+
+.connect4-icon{
+    transition: .3s;
+    width: 250px;
+    height: auto;
+    margin-left: 405px;
+    max-width: 22vw;
+    flex: 0 0 50%;
+    background: transparent;
+    size: 50%;
+}
+.connect4-icon:hover{
+    margin-left: 355px;
+    width: 330px;
+}
+
+/* .link{
+        transition: .3s;
+        display: flex !important;
+        align-items: center !important;
+        align-content: center !important;
+        justify-items: flex-start !important;
+        justify-content: flex-start !important;
+        flex: 0 0 33%;
+        max-width: 50%;
+        height: 100%;
+        background-color: transparent;
+} */
+img, figure {
+  max-width: 100%;
+  
+}
+
+.button {
+    margin-top: 800px;
+    margin-right: 1400px;
+    padding: 40px 15px 6px 15px !important;
+    border: 20px solid #ffffff;
+    
+}
+.button:hover {
+    background-color:  #ff0000;
+    padding: 37px 4px 0px 4px !important;
+    margin-left: 11px;
+}
+
+#section2 {
+    margin-top: 180px;
+    padding-left: 1350px;
+}
+#section1 {
+    margin-top: 475px;
+    padding-left: 1350px;
+}
+#section3 {
+    margin-top: 430px;
+    padding-left: 1350px;
+}
+
+.first-up {
+    padding-top: 200px;
+    
+}
+.second-down{
+    margin-top: 180px;
+}
+.first-down {
+    padding-top: -50px;
+}
+
+.upsidedown {
+    transform: rotate(180deg);
+}

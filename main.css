@@ -1,0 +1,344 @@
+html {
+    scroll-behavior: smooth;
+}
+
+
+/* head {
+    display: none;
+}
+meta {
+    display: none;
+}
+title {
+    display: none;
+}
+link {
+    display: none;
+}
+script {
+    display: none;
+} */
+
+
+/* body css */
+body {
+    height: 172vh;    
+    background: linear-gradient(180deg, #000000 0, #000000 25%, #003087 75%);
+    /* Might need to change % and height based upon what we're including on this page */
+}
+
+/* affects the style of an element's scrollbar when overflow:scroll is set; */
+body::-webkit-scrollbar {
+    width: 20px;
+    height: 10px;
+    visibility: visible;
+}
+
+/* draggable scrolling handle */
+body::-webkit-scrollbar-thumb {
+    height: 0px;
+    border-radius: 55px;
+    visibility: visible;
+    transition: all 0.5s ease;
+    background-color: #00153d;
+}
+
+/* progress bar */
+body::-webkit-scrollbar-track {
+    z-index: 4;
+    background: var(--scrollbarBG);
+}
+
+/* progress bar hover */
+/* body::-webkit-scrollbar-thumb:hover{
+    transition: all 0.5s ease;
+    visibility: visible;
+} */
+
+
+/* header css */
+.header {
+    opacity: 100%;
+    height: 125px;
+    margin-left: -20px;
+
+    background: white;
+    transition: all 0.5s ease;
+    width: 100vw !important;
+    position: fixed !important;
+    top: 0px !important;
+    z-index: 1 !important;
+
+    border: 2px solid #003087 !important;
+}
+
+/* header edited */
+.header-alt {
+    opacity: 85%;
+    height: 125px;
+    margin-left: -20px;
+
+    background: #003087;
+    transition:all 0.5s ease;
+    width: 100vw !important;
+    position: fixed !important;
+    top: 0px !important;
+    z-index: 1 !important;
+
+    border: 2px solid rgb(0, 0, 0) !important;
+}
+
+/* header container */
+.header-div {
+    padding: 0 30px !important;
+    height: 68px !important;
+    display: flex !important;
+}
+
+
+/* .navbar{
+    width: 100vw !important;
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -15px;
+    margin-right: -15px;
+} */
+
+
+/* logo container */
+.logobox {
+    display: flex !important;
+    align-items: center !important;
+    align-content: center !important;
+    flex: 0 0 50%;
+    max-width: 25%;
+    margin-top: 25px;
+}
+
+/* logo styling */
+.logo {
+    margin-top: 30px;
+    height: 120px !important;
+    display: block !important;
+    cursor: not-allowed;
+}
+
+
+/* link container */
+.hrefbox {
+    margin-top: 25px;
+    display: flex !important;
+    align-items: center !important;
+    flex-direction: row !important;
+    flex: 0 0 75%;
+    max-width: 75%;
+    justify-content: flex-end !important;
+}
+
+/* login buttonn styling */
+.loginlnk {
+    margin-top: 30px;
+    margin-left: 2.5px;
+    margin-right: 5px;
+    font-family: sans-serif;
+    font-size: 18px;
+
+    transition: all 0.5s ease;
+    border-width: 0 0 2px 0 !important;
+    cursor: pointer !important;
+    padding: 14px 30px 12px 30px !important;
+    padding: 7px 15px 6px 15px !important;
+    border-radius: 55px !important;
+    text-decoration: none !important;
+    text-transform: uppercase !important;
+    text-shadow: none !important;
+
+    border: 2px solid rgb(0, 0, 0) !important;
+    background-color: white;
+    color: #000000;
+}
+
+/* login button styling when scrolled */
+.loginlnk-alt  {
+    margin-top: 30px;
+    margin-left: 2.5px;
+    margin-right: 5px;
+    font-family: sans-serif;
+    font-size: 18px;
+
+    transition: all 0.5s ease;
+    border-width: 0 0 2px 0 !important;
+    cursor: pointer !important;
+    padding: 14px 30px 12px 30px !important;
+    padding: 7px 15px 6px 15px !important;
+    border-radius: 55px !important;
+    text-decoration: none !important;
+    text-transform: uppercase !important;
+    text-shadow: none !important;
+
+    background-color: #005EB8;
+    color: white;
+    border: 2px solid rgb(255, 255, 255) !important;
+}
+
+/* login button hover for scrolled/unscrolled */
+.loginlnk:hover {
+    background-color: #003087;
+    color: white;
+    padding: 14px 30px 12px 30px !important;
+}
+.loginlnk-alt:hover {
+    background-color: #003087;
+    color: white;
+    padding: 14px 30px 12px 30px !important;
+}
+
+/* signup link styling  */
+.signuplnk {
+    margin-top: 30px;
+    margin-left: 5px;
+    font-family: sans-serif;
+    font-size: 18px;
+
+    background-color: white;
+    color: #005EB8;
+    transition: all 0.5s ease;
+    border-width: 0 0 2px 0 !important;
+    cursor: pointer !important;
+    padding: 14px 30px 12px 30px !important;
+    padding: 7px 15px 6px 15px !important;
+    border-radius: 55px !important;
+    text-decoration: none !important;
+    text-transform: uppercase !important;
+    text-shadow: none !important;
+
+    border: 2px solid rgb(0, 0, 0) !important;
+    background-color: white;
+    color: #000000;
+}
+
+/* signup link styling when scrolled */
+.signuplnk-alt {
+    margin-top: 30px;
+    margin-left: 5px;
+    font-family: sans-serif;
+    font-size: 18px;
+
+    transition: all 0.5s ease;
+    border-width: 0 0 2px 0 !important;
+    cursor: pointer !important;
+    padding: 14px 30px 12px 30px !important;
+    padding: 7px 15px 6px 15px !important;
+    border-radius: 55px !important;
+    text-decoration: none !important;
+    text-transform: uppercase !important;
+    text-shadow: none !important;
+
+    background-color: #005EB8;
+    color: white;
+    border: 2px solid rgb(255, 255, 255) !important;
+}
+
+/* signup button hover for scrolled/unscrolled */
+.signuplnk:hover {
+    background-color:  #003087;
+    color: white;
+    padding: 14px 30px 12px 30px !important;
+
+}
+.signuplnk-alt:hover {
+    background-color:  #003087;
+    color: white;
+    padding: 14px 30px 12px 30px !important;
+
+}
+
+
+/* autoscroll button container */
+.autoscroll-container {
+    align-content: center;
+    margin-top: 45vh;
+    position: relative;
+    /* margin-left:  auto;
+    margin-right:  auto;
+    scroll-behavior: auto; */
+    display: flex;
+}
+
+/* autoscroll button contents */
+.autoscroll-content {
+    background-color: transparent;
+    width: auto; /* Can be in percentage also. */
+    border: 2px solid transparent;
+    border-radius: 55px;
+    height: 100px;
+    margin-left:  46vw;
+    padding: 10px;
+    position: relative;
+}
+.autoscroll-box {
+    margin-left:  auto;
+    margin-right:  auto;
+    display: flex !important;
+    align-items: center !important;
+    flex-direction: row !important;
+    flex: 0 0 75%;
+    max-width: 50%;
+    justify-content: flex-end !important;
+}
+.autoscroll-lnk {
+    font-family: sans-serif;
+    font-size: 18px;
+
+    transition: all 0.5s ease;
+    border-width: 0 0 2px 0 !important;
+    cursor: pointer !important;
+    padding: 7px 15px 6px 15px !important;
+    border-radius: 55px !important;
+    text-decoration: none !important;
+    text-transform: uppercase !important;
+    text-shadow: none !important;
+
+    border: 3px solid #0038a0 !important;
+    background-color: white;
+    color: #000000;
+}
+.autoscroll-lnk:hover {
+    background-color: #00389f;
+    font-size: 22px;
+    margin-top: -12px;
+    margin-left: -15px;
+    color: white;
+    padding: 16px 34px 14px 34px !important;
+    border: 4px solid rgb(255, 255, 255) !important;
+}
+
+
+/* participant information styling */
+.information-container {
+    align-content: center;
+    margin-top: 400px;
+    position: relative;
+    display: flex;
+}
+.information-content {
+    background-color: white;
+    width: 90%;
+    border: 2px solid transparent;
+    border-radius: 55px;
+    height: 20%;
+    margin: 0 auto;
+    margin-top: 150px;
+    padding: 10px;
+    position: relative;
+}
+
+
+p {
+    font-family: sans-serif;
+    text-align: center;
+}
+.title-information {
+    font-weight: bold;
+    font-size: 40px;
+}

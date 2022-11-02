@@ -1,0 +1,249 @@
+html {
+    scroll-behavior: smooth;
+}
+
+/* body css */
+body {
+    height: 105vh;    
+    background: linear-gradient(180deg, #000000 0, #000000 25%, #003087 75%);
+    /* Might need to change % and height based upon what we're including on this page */
+    display: block;
+    margin: 0px;
+}
+
+/* affects the style of an element's scrollbar when overflow:scroll is set; */
+body::-webkit-scrollbar {
+    width: 20px;
+    height: 10px;
+    visibility: visible;
+}
+
+/* draggable scrolling handle */
+body::-webkit-scrollbar-thumb {
+    height: 0px;
+    border-radius: 55px;
+    visibility: visible;
+    transition: all 0.5s ease;
+    background-color: #00153d;
+}
+
+/* progress bar */
+body::-webkit-scrollbar-track {
+    z-index: 4;
+    background: var(--scrollbarBG);
+}
+
+/* progress bar hover */
+/* body::-webkit-scrollbar-thumb:hover{
+    transition: all 0.5s ease;
+    visibility: visible;
+} */
+
+.canvas {
+    margin-top: 300px;
+}
+
+/* header css */
+.header {
+    opacity: 100%;
+    height: 125px;
+    margin-left: -20px;
+    margin-top: 10px;
+    
+    background: transparent;
+    transition: all 0.5s ease;
+    width: 100vw !important;
+    position: fixed !important;
+    top: 0px !important;
+    z-index: 1 !important;
+
+    /* display: block; */
+}
+
+/* header edited */
+.header-alt {
+    opacity: 0%;
+    height: 125px;
+    margin-left: -20px;
+
+    transition:all 0.5s ease;
+    width: 100vw !important;
+    position: fixed !important;
+    top: 0px !important;
+    z-index: 1 !important;
+}
+
+/* header container */
+.header-div {
+    padding: 0 15px !important;
+    height: 68px !important;
+    display: flex !important;
+}
+
+/* logo container */
+.logobox {
+    display: flex !important;
+    align-items: center !important;
+    align-content: center !important;
+    flex: 0 0 50%;
+    max-width: 25%;
+    margin-top: 25px;
+}
+
+/* logo styling */
+.logo {
+    margin-top: 30px;
+    height: 120px !important;
+    display: block !important;
+    border: 2px solid rgb(255, 255, 255) !important;
+}
+
+
+/* link container */
+.hrefbox {
+    margin-top: 25px;
+    margin-left: -30px;
+    display: flex !important;
+    align-items: center !important;
+    flex-direction: row !important;
+    flex: 0 0 75%;
+    max-width: 75%;
+    justify-content: flex-end !important;
+}
+
+/* logout link styling  */
+.logoutlnk {
+    margin-top: 30px;
+    font-family: sans-serif;
+    font-size: 18px;
+
+    background-color: white;
+    color: #005EB8;
+    transition: all 0.5s ease;
+    border-width: 0 0 2px 0 !important;
+    cursor: pointer !important;
+    padding: 7px 15px 4px 15px !important;
+    border-radius: 55px !important;
+    text-decoration: none !important;
+    text-transform: uppercase !important;
+    text-shadow: none !important;
+
+    border: 2px solid rgb(0, 0, 0) !important;
+    background-color: white;
+    color: #000000;
+}
+
+/* logout link styling when scrolled */
+.logoutlnk-alt {
+    margin-top: 30px;
+    margin-left: 5px;
+    font-family: sans-serif;
+    font-size: 18px;
+
+    transition: all 0.5s ease;
+    border-width: 0 0 2px 0 !important;
+    cursor: pointer !important;
+    padding: 7px 15px 4px 15px !important;
+    border-radius: 55px !important;
+    text-decoration: none !important;
+    text-transform: uppercase !important;
+    text-shadow: none !important;
+
+    background-color: #005EB8;
+    color: white;
+    border: 2px solid rgb(255, 255, 255) !important;
+}
+
+/* logout button hover for scrolled/unscrolled */
+.logoutlnk:hover {
+    background-color:  #003087;
+    color: white;
+    padding: 14px 30px 12px 30px !important;
+
+}
+.logoutlnk-alt:hover {
+    background-color:  #003087;
+    color: white;
+    padding: 14px 30px 12px 30px !important;
+
+}
+
+
+p {
+    font-family: sans-serif;
+    text-align: center;
+}
+/* Game title styling */
+p u{
+    text-align: right;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: calc(1em + 1vh);
+}
+/* Play game button */
+p a{
+    font-family: sans-serif;
+    font-size: 18px;
+
+    background-color: #005EB8;
+    color: white;
+    transition: all 0.5s ease;
+    border-width: 0 0 2px 0 !important;
+    cursor: pointer !important;
+    padding: 14px 30px 12px 30px !important;
+    /* border: 2px solid rgb(0,	94, 184) !important; */
+    padding: 7px 15px 6px 15px !important;
+    border-radius: 55px !important;
+    text-decoration: none !important;
+    text-transform: uppercase !important;
+    text-shadow: none !important;
+}
+/* Play game hover */
+p a:hover {
+    background-color:  #003087;
+    color: white;
+    padding: 14px 30px 12px 30px !important;
+}
+
+.main-container{
+    /* background-color: transparent; */
+    color: #ffffff;
+    position: absolute;
+    top: 20vh;
+    left: 12%;
+    height: 500px;
+    width: 70vw;
+    border: 2px solid transparent;
+}
+
+.secondary-container{
+    margin-top: 10px;
+    margin-bottom: 460px;
+    /* padding: 0 30px !important; */
+    height: 246px !important;
+    position: relative !important;
+    background-color: transparent !important;
+    /* display: flex !important; */
+}
+
+.game-information{
+    display: flex !important;
+    align-items: left !important;
+    align-content: left !important;
+    justify-items: flex-start !important;
+    justify-content: flex-start !important;
+    flex: 0 0 75%;
+    max-width: 100%;
+    background-color: #000000;
+    border: 4px solid #ffffff;
+    background: linear-gradient(180deg, #000000 50%, #000000 5%, #001b4c 95%);
+    /* border-top-left-radius: 55px;
+    border-top-right-radius: 55px; */
+}
+
+.p-style{
+    margin-left: 15px;
+    margin-right: 15px;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: calc(1em + 0.5vh);
+}

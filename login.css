@@ -1,0 +1,172 @@
+/* html and body css */
+html, body {
+    scroll-behavior: smooth;
+    height: 100%;
+    overflow: hidden;
+    text-rendering: optimizeSpeed;
+    background: linear-gradient(180deg, #000000 0, #000000 25%, #003087 75%);
+}
+
+body, div, object, h4, h5, h6, a, img, ins, kbd, q, s, form {
+    font: inherit;
+    vertical-align: baseline;
+}
+
+/* affects the style of an element's scrollbar when overflow:scroll is set; */
+body::-webkit-scrollbar {
+    width: 20px;
+    height: 10px;
+    visibility: visible;
+}
+
+/* draggable scrolling handle */
+body::-webkit-scrollbar-thumb {
+    height: 0px;
+    border-radius: 55px;
+    visibility: visible;
+    transition: all 0.5s ease;
+    background-color: #00153d;
+}
+
+/* progress bar */
+body::-webkit-scrollbar-track {
+    z-index: 4;
+    background: var(--scrollbarBG);
+}
+
+/* progress bar hover */
+/* body::-webkit-scrollbar-thumb:hover{
+    transition: all 0.5s ease;
+    visibility: visible;
+} */
+
+/* header css */
+/* .header{
+    opacity: 100%;
+    height: 125px;
+    margin-left: -20px;
+
+    background: white;
+    transition: all 0.5s ease;
+    width: 102vw !important;
+    position: fixed !important;
+    top: 0px !important;
+    z-index: 1 !important; */
+
+    /* display: block; */
+
+    /* border: 2px solid #003087 !important;
+} */
+
+h1, h2, h3, table th, table th {
+    font-size: 1.8rem;
+    color: #ffffff;
+    -webkit-font-smoothing: antialiased;
+    line-height: 2.2rem;
+}
+
+/* header container */
+/* .header-div {
+    padding: 0 30px !important; */
+    /* align-content: center !important; */
+    /* position: relative !important; */
+    /* background-color: transparent !important; */
+    /* height: 68px !important;
+    display: flex !important;
+} */
+
+/* .navbar{
+    width: 100vw !important;
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -15px;
+    margin-right: -15px;
+} */
+
+/* logo container */
+.logobox {
+    display: flex !important;
+    align-items: center !important;
+    align-content: center !important;
+    margin-left: 135px;
+    margin-top: -40px;
+    margin-bottom: 20px;
+    flex: 0 0 50%;
+    max-width: 35%;
+    /* margin-top: 15px; */
+}
+
+/* logo styling */
+.logo {
+    /* margin-top: 30px; */
+    height: 120px !important;
+    display: block !important;
+    /* cursor: not-allowed; */
+}
+
+/* submission form styling */
+.userinput{
+    background-color: transparent;
+    width: 100% !important;
+    display: flex;
+    margin-top: 15vh;
+}
+
+/* further submission form styling */
+.userinputcenter{
+    height: 400px;
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: white;
+    border: 4px solid #003087;
+    border-radius: 180px;
+    display: flex !important;
+    align-items: center !important;
+    flex: 0 0 30% !important;
+}
+
+/* submission field styling */
+input[type=text], input[type=password] {
+    width: 50%;
+    text-align: center;
+    padding: 12px 20px;
+    margin: 4px 0;
+    margin-left: 7vw;
+    display: inline-block;
+    border: 3px solid #ccc;
+    /* border-radius: 55px; */
+    box-sizing: border-box;
+}
+
+/* submission button styling */
+.submitlogin   {
+    display: block;
+    margin-top: 15px;
+    margin-left: auto;
+    margin-right: 170px;
+    justify-self: center !important;
+    
+    font-family: sans-serif;
+    font-size: 18px;
+
+    background-color: white;
+    border: 2px solid #005EB8;
+    color: #005EB8;
+    
+    transition: all 0.5s ease;
+    border-width: 3px !important;
+    cursor: pointer !important;
+
+    padding: 14px 30px 14px 30px !important;
+    border-radius: 55px !important;
+    text-decoration: none !important;
+    text-transform: uppercase !important;
+    text-shadow: none !important;
+}
+
+.submitlogin:hover {
+    background-color: #003087;
+    border: 2px solid #ccc;
+    color: white;
+}
